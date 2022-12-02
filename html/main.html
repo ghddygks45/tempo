@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+	<title>Document</title>
+	<script src="../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../resource/js/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="../resource/css/style.css">
+	<link rel="stylesheet" href="../resource/css/swiper.min.css">
+	<link rel="stylesheet" href="../resource/css/main.css">
+
+	<script>
+		$(function () {
+			var mainSwiper = new Swiper('.visual_slider', {
+				slidesPerView: '1',
+				loop: true,
+				// centeredSlides: true,
+				//loopedSlides: swiperNum.length,
+				speed: 800,
+				navigation: {
+					prevEl: '.main_prev',
+					nextEl: '.main_next',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+				},
+			})
+
+			var eventSwiper = new Swiper('.event_list_wrap', {
+				slidesPerView: '4',
+				loop: false,
+				// centeredSlides: true,
+				//loopedSlides: swiperNum.length,
+				speed: 800,
+				spaceBetween: 40,
+				navigation: {
+					prevEl: '.event_prev',
+					nextEl: '.event_next',
+				},
+			})
+
+			var feedSwiper = new Swiper('.feed_list_wrap', {
+				spaceBetween: 100,
+				//centeredSlides: true,
+				speed: 7000,
+				autoplay: {
+					delay: 1,
+				},
+				loop: true,
+				slidesPerView: 'auto',
+				allowTouchMove: false,
+				disableOnInteraction: true
+			})
+		})
+	</script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header" class="header"></header>
+
+		<main id="contents" class="contents">
+			<section id="sec01" class="sec01">
+				<div class="visual_slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#;">
+								<div class="img_box">
+									<img src="../resource/image/main_visual01.jpg" alt="">
+								</div>
+								<div class="txt_box">
+									<strong>HAVE A tempo!</strong>
+									<em>“삶이 바쁠 때나 여유로울 때나 내 곁엔 늘 커피가 있다.”</em>
+									<p>
+										스페셜티 원두의 커피와 최상급 재료로 만든 다양한 음료를<br>
+										합리적인 가격대로 제공하며, 프랜차이즈에서 경험할 수 없었던<br>
+										감각적인 공간과 높은 브랜드 감도를 고객에게 선사합니다.
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<div class="img_box">
+									<img src="../resource/image/main_visual01.jpg" alt="">
+								</div>
+								<div class="txt_box">
+									<strong>HAVE A tempo!</strong>
+									<em>“삶이 바쁠 때나 여유로울 때나 내 곁엔 늘 커피가 있다.”</em>
+									<p>
+										스페셜티 원두의 커피와 최상급 재료로 만든 다양한 음료를<br>
+										합리적인 가격대로 제공하며, 프랜차이즈에서 경험할 수 없었던<br>
+										감각적인 공간과 높은 브랜드 감도를 고객에게 선사합니다.
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<div class="img_box">
+									<img src="../resource/image/main_visual01.jpg" alt="">
+								</div>
+								<div class="txt_box">
+									<strong>HAVE A tempo!</strong>
+									<em>“삶이 바쁠 때나 여유로울 때나 내 곁엔 늘 커피가 있다.”</em>
+									<p>
+										스페셜티 원두의 커피와 최상급 재료로 만든 다양한 음료를<br>
+										합리적인 가격대로 제공하며, 프랜차이즈에서 경험할 수 없었던<br>
+										감각적인 공간과 높은 브랜드 감도를 고객에게 선사합니다.
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="controller_wrap">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev main_prev">이전</div>
+						<div class="swiper-button-next main_next">다음</div>
+					</div>
+					<span class="scroll_icon">Scroll down</span>
+				</div>
+			</section>
+			<section id="sec02" class="sec02">
+				<div class="inner">
+					<div class="flex_wrap">
+						<div class="l">
+							<h3 class="main_tit">EVENT</h3>
+						</div>
+						<div class="r">
+							<div class="event_controller">
+								<div class="swiper-button-prev event_prev"></div>
+								<div class="swiper-button-next event_next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="event_list_wrap swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="img_box">
+									<a href="#;">
+										<img src="../resource/image/main_event01.jpg" alt="">
+									</a>
+								</div>
+								<div class="event_info">
+									<em class="stat prg">진행중</em>
+									<strong class="title">
+										<a href="#;">가을 신제품 출시기념 이벤트</a>
+									</strong>
+									<span class="date">2022.10.31</span>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img_box">
+									<a href="#;">
+										<img src="../resource/image/main_event02.jpg" alt="">
+									</a>
+								</div>
+								<div class="event_info">
+									<em class="stat prg">진행중</em>
+									<strong class="title">
+										<a href="#;">음료 테이크아웃 상시 할인</a>
+									</strong>
+									<span class="date">2022.09.26</span>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img_box">
+									<a href="#;">
+										<img src="../resource/image/main_event03.jpg" alt="">
+									</a>
+								</div>
+								<div class="event_info">
+									<em class="stat prg">진행중</em>
+									<strong class="title">
+										<a href="#;">인스타그램 인증샷 이벤트인스타그램 인증샷 이벤트</a>
+									</strong>
+									<span class="date">2022.09.01</span>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img_box">
+									<a href="#;">
+										<img src="../resource/image/main_event04.jpg" alt="">
+									</a>
+								</div>
+								<div class="event_info">
+									<em class="stat end">종료</em>
+									<strong class="title">
+										<a href="#;">마시멍 즐기멍 제주 썸머!</a>
+									</strong>
+									<span class="date">2022.08.14</span>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img_box">
+									<a href="#;">
+										<img src="../resource/image/main_visual01.jpg" alt="">
+									</a>
+								</div>
+								<div class="event_info">
+									<em class="stat end">종료</em>
+									<strong class="title">
+										<a href="#;">마시멍 즐기멍 제주 썸머!</a>
+									</strong>
+									<span class="date">2022.08.14</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="sec03" class="sec03">
+				<div class="inner">
+					<div class="feed_list_wrap swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="feed">
+									<a href="#;">
+										<i class="ico_instagram">instagram</i>
+										<img src="../resource/image/img_feed01.jpg" alt="">
+										<div class="feed_info">
+											<em class="account">@tempocoffee_official</em>
+											<p class="txt">
+												매일 모든 템포 속에 함께 하기 위해 템포커피는 스페셜티
+												원두로 블렌딩한 커피를 만나본 적 없는 합리적인 가격대로
+												선보입니다.</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="feed">
+									<a href="#:">
+										<i class="ico_instagram">instagram</i>
+										<img src="../resource/image/img_feed02.jpg" alt="">
+										<div class="feed_info">
+											<em class="account">@tempocoffee_official</em>
+											<p class="txt">
+												매일 모든 템포 속에 함께 하기 위해 템포커피는 스페셜티
+												원두로 블렌딩한 커피를 만나본 적 없는 합리적인 가격대로
+												선보입니다.</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="feed">
+									<a href="#;">
+										<i class="ico_instagram">instagram</i>
+										<img src="../resource/image/img_feed03.jpg" alt="">
+										<div class="feed_info">
+											<em class="account">@tempocoffee_official</em>
+											<p class="txt">
+												매일 모든 템포 속에 함께 하기 위해 템포커피는 스페셜티
+												원두로 블렌딩한 커피를 만나본 적 없는 합리적인 가격대로
+												선보입니다.</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="feed">
+									<a href="#;">
+										<i class="ico_instagram">instagram</i>
+										<img src="../resource/image/img_feed04.jpg" alt="">
+										<div class="feed_info">
+											<em class="account">@tempocoffee_official</em>
+											<p class="txt">
+												매일 모든 템포 속에 함께 하기 위해 템포커피는 스페셜티
+												원두로 블렌딩한 커피를 만나본 적 없는 합리적인 가격대로
+												선보입니다.</p>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="feed">
+									<a href="#;">
+										<i class="ico_instagram">instagram</i>
+										<img src="../resource/image/img_feed05.jpg" alt="">
+										<div class="feed_info">
+											<em class="account">@tempocoffee_official</em>
+											<p class="txt">
+												매일 모든 템포 속에 함께 하기 위해 템포커피는 스페셜티
+												원두로 블렌딩한 커피를 만나본 적 없는 합리적인 가격대로
+												선보입니다.</p>
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="sec04" class="sec04">
+				<div class="inner">
+					<div class="flex_wrap">
+						<div class="l">
+							<h3 class="main_tit"></h3>
+						</div>
+						<div class="r">
+							<div class="notice">
+								<ul>
+									<li>
+										<a href="#;"><strong></strong><span></span></a>
+									</li>
+									<li>
+										<a href="#;"><strong></strong><span></span></a>
+									</li>
+									<li>
+										<a href="#;"><strong></strong><span></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer" class="footer"></footer>
+	</div>
+
+
+
+</body>
+
+</html>
